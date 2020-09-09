@@ -1,0 +1,16 @@
+{
+    "mongourl": "mongodb://127.0.0.1/chat",
+    "mongooption": {
+        "auth": {
+            "authdb": "admin"
+        },
+        "db": {
+            "safe": true
+        },
+        "useNewUrlParser": true, 
+        "useUnifiedTopology": true ,
+        "pass": "Ecg16@9c",
+        "user": "admin"
+    }
+    
+}
