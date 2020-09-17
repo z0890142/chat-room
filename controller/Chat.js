@@ -14,14 +14,21 @@ function ScoketStart(){
 
 io.on('connection', socket => {
   socket.on('online', function(username){
-    socket.emit('getmember',users)
     socket.username = username;
     users[username] = {
       username:username,
       socketId: socket.id,
       status: USER_STATUS[0]
     };
-    console.log(users)
+
+    var userList=[];
+    var keys=Object.keys(users)
+    keys.forEach(element => {
+      if (users[element]['status']==USER_STATUS[0]){
+        userList.push(element)
+      }
+    });
+    socket.broadcast.emit('getmember',userList)
   })
 
   socket.on('private_chat', (params, fn) => {
@@ -47,4 +54,18 @@ exports.ChatWithFriend= function(req, res) {
             res.send({result:"OK", message: 'User registered'});
         }
     })
+}
+
+
+exports.UserList= function(req, res) {
+  var userList=[];
+  var keys=Object.keys(users)
+  keys.forEach(element => {
+    if (users[element]['status']==USER_STATUS[0]){
+      userList.push(element)
+    }
+  });
+  res.send({result:"OK", data: userList});
+      
+  
 }

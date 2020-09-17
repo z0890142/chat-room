@@ -1,12 +1,13 @@
 const express=require('express');
 const path=require('path');
 const bodyParser=require('body-parser');
-// const cors=require('cors');
+const cors=require('cors');
 const mongoose=require('mongoose');
 
 //port number
-const port=4200;
+const port=4201;
 const app=express();
+app.use(cors());
 const routers=require('./router/router.js');
 
 var dirRoot = path.dirname(__dirname);

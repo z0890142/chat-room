@@ -9,6 +9,7 @@
   "author": "skyler",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "log4js": "^6.3.0",
     "mongoose": "^5.9.19",

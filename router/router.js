@@ -8,6 +8,6 @@ const Chat=require(path.join(dirRoot,'controller','Chat.js'));
 
 
 // router.post('/register/user',User.Register);
-// router.post('/register/user',Chat.Register);
+ router.get('/user/list',Chat.UserList);
 
 module.exports=router;
