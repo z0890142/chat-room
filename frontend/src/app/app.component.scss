@@ -1,0 +1,151 @@
+.login {
+    text-align: center;
+}
+ 
+.mat-spinner {
+    width: 10px !important;
+    height: 10px !important;
+    display: inline-block;
+    // margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mat-drawer.mat-drawer-side {
+    padding: 0 5px;
+}
+ 
+.empty-conversation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ 
+.conversation-header h2, .conversation-header p {
+    align-items: center;
+    display: flex;
+}
+ 
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+ 
+.conversation-history.mat-list {
+    height: calc(100% - 180px);
+    overflow-x: scroll;
+    position: absolute;
+    width: 100%;
+}
+ 
+.conversation-history.mat-list p {
+    margin: 0;
+}
+ 
+.empty-conversation h1 {
+    margin: 0;
+}
+ 
+.conversations .mat-list-item {
+    cursor: pointer;
+}
+ 
+// .mat-card {
+//     height: 100%;
+//     padding: 0 24px;
+//     overflow: scroll;
+// }
+.conversation-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fafafa;
+}
+ 
+section .mat-list .mat-list-avatar{
+    width: 25px;
+    height: 25px;
+}
+ 
+.mat-list-avatar {
+    margin: 0 5px;
+}
+ 
+.right {
+    text-align: right;
+}
+ 
+.full-width {
+    width: 100%;
+}
+ 
+.full-width .mat-icon {
+    cursor: pointer;
+}
+
+
+
+.received_withd_msg p {
+	background: #ebebeb none repeat scroll 0 0;
+	color: #646464;
+	font-size: 14px;
+	width: 100%;
+}
+.received_msg p {
+	display: inline-block;
+	padding: 5px 10px 5px 12px;
+    vertical-align: top;
+    background: #646464;
+	width: 100%;
+    border-radius: 3px;
+	margin: 0;
+
+}
+.received_msg {
+width: 46%;
+}
+
+
+.incoming_msg {
+	overflow: hidden;
+    margin: 26px 0 26px;
+}
+
+.outgoing_msg {
+	overflow: hidden;
+	margin: 26px 0 26px;
+}
+.sent_msg {
+	float: right;
+	width: 46%;
+}
+.sent_msg p {
+	background: #05728f none repeat scroll 0 0;
+	border-radius: 3px;
+	font-size: 14px;
+	margin: 0;
+	color: #fff;
+	padding: 5px 10px 5px 12px;
+	width: 100%;
+}
+
+
+.mesgs {
+	float: left;
+	padding: 30px 15px 0 25px;
+	width: 60%;
+}
+
+
+.message {
+	list-style-type: none;
+}
